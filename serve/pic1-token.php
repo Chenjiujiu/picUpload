@@ -11,7 +11,7 @@ $token = $auth->uploadToken($bucket);
 header('Access-Control-Allow-Origin:*');
 header('Content-Type:application/json');
 $json['uptoken'] = $token;
-$json['ceode'] = 1;
+$json['code'] = 1;
 $json['domain'] = 'pic.chenjiujiu.com';
 echo json_encode($json,JSON_UNESCAPED_UNICODE);
 ?>

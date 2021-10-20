@@ -54,3 +54,36 @@
 .upfile-ok{
     display: none;
 }
+.token-button,
+.token-button input,
+.token-button label
+{
+    cursor: pointer;
+}
+.token-mess{
+    font-size: 12px;
+}
+.upfiles[data-state=stop] .upfile-close{
+    display: none;
+}
+.upfiles[data-state=begin] .upfile-close{
+    display: block;
+}
+.upfile-err,
+.upfile-ok{
+    font-size: 12px;
+}
+.token-ok,
+.token-err{
+    display: none;
+}
+.upfile-info{
+    min-width: 180px;
+}
+.modal{
+    display: block;
+}
+#dow{
+    display: none;
+    margin-left: 100px;
+}
