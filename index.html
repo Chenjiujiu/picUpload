@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>图片上传</title>
+	<link href="./favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<header>
+	<h1 class="text-primary text-center">图片上传V1.0</h1>
+	<hr/>
+</header>
+<div class="container">
+	<div class="select">
+		<div class="d-inline-block p-1" id="yun1">
+			<input type="radio" name="serve" class="yun" value="pic" id="serve1" checked>
+			<label for="serve1" class="text-primary">pic.chenjiujiu.com</label>
+		</div>
+		<div class="d-inline-block p-1" id="yun2">
+			<input  type="radio" name="serve" class="yun" value="pic2" id="serve2">
+			<label for="serve2" class="text-info">pic2.chenjiujiu.com</label>
+		</div>
+		<div class="status">
+			<div id="status-load" class="spinner-border spinner-border-sm text-danger loading" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+			<div id="status-ok" class="spinner-grow spinner-grow-sm text-success loading-ok" role="status">
+				<span class="sr-only">ok</span>
+			</div>
+		</div>
+	</div>
+	<div class="ctrs">
+		<input type="file" class="d-none" id="files" accept="image/png,image/jpeg,image/gif,image/jpg,image/webp" multiple="multiple">
+		<label for="files" class="d-inline-block border border-1  border-secondary files font-weight-bold">+选择文件</label>
+		<button id="start" class="btn btn-info text-white">开始</button>
+		<button id="stop" class="btn btn-warning text-white">暂停</button>
+	</div>
+	<div class="showbox">
+		<table class="table">
+			<thead>
+			<tr>
+				<th scope="col">文件名</th>
+				<th scope="col">文件大小</th>
+				<th scope="col">状态</th>
+			</tr>
+			</thead>
+			<tbody class="upfiles">
+			</tbody>
+		</table>
+	</div>
+
+</div>
+<script type="module" src="./index.js"></script>
+</body>
+</html>

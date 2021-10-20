@@ -1,0 +1,56 @@
+.select{
+    margin-bottom: 20px;
+}
+.status{
+    display: inline-block;
+    margin-left: 10px;
+}
+.status .loading-ok {
+   display: none;
+}
+.ctrs .btn{
+    padding: 0 50px;
+    margin: 0 2px;
+}
+.files{
+    padding: 10px 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.ctrs{
+    margin-bottom: 20px;
+}
+.upfile-info{
+    padding-right: 40px;
+    position: relative;
+}
+.progress-box{
+    margin-top:10px ;
+}
+.upfile-box{
+    min-width: 200px;
+}
+.upfile-close{
+    position: absolute;
+    right: 0;
+    top: -3px;
+    padding: 0 5px;
+}
+.upfile-err span,
+.upfile-ok span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: center;
+}
+.err-msg,
+.upfile-ok-link{
+    margin-left:20px ;
+}
+.upfile-err{
+    display: none;
+}
+.upfile-ok{
+    display: none;
+}
