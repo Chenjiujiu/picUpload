@@ -1,3 +1,6 @@
+.container{
+    min-height: 800px;
+}
 .select{
     margin-bottom: 20px;
 }
@@ -86,4 +89,9 @@
 #dow{
     display: none;
     margin-left: 100px;
+}
+#copyright{
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
 }

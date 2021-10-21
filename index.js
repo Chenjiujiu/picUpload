@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
 	var JSonToCSV = {
 		/*
@@ -109,8 +107,6 @@ window.onload = function () {
 			return Sys;
 		}
 	};
-
-
 	class Page {
 		constructor() {
 			this.dom = {
@@ -147,7 +143,9 @@ window.onload = function () {
 				this.addFiles(files)
 			}
 			for (let i = 0; i < this.dom.yunDom.length; i++) {
-				this.dom.yunDom[i].onclick=()=>{this.getToken();}
+				this.dom.yunDom[i].onclick=()=>{
+					this.getToken();
+				}
 			}
 			this.dom.control.onclick=()=>{
 				this.begin?this.stop():this.start();
@@ -177,7 +175,7 @@ window.onload = function () {
 			} else {
 				xhr = new ActiveXObject("Microsoft.XMLHTTP");
 			}
-			let url='https://chenjiujiu.com/picUpload/serve/'+serve+'-token.php'
+			let url='./serve/'+serve+'-token.php'
 			xhr.open('get', url, true);
 			xhr.send(null);
 			xhr.onreadystatechange = () => {
